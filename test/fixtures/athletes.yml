@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ftp_license: 1
+  name: MyString
+  full_name: MyString
+  birth_date: 2013-06-07
+  team_id: 1
+  country_iso: MyString
+  place_id: 1
+  email: MyString
+  facebook: MyString
+  twitter: MyString
+  url: MyString
+  ftp_number: 1
+
+two:
+  ftp_license: 1
+  name: MyString
+  full_name: MyString
+  birth_date: 2013-06-07
+  team_id: 1
+  country_iso: MyString
+  place_id: 1
+  email: MyString
+  facebook: MyString
+  twitter: MyString
+  url: MyString
+  ftp_number: 1

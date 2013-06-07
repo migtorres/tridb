@@ -1,0 +1,169 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (7.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607105417)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (14.7ms)[0m  [1mCREATE TABLE "athletes" ("id" serial primary key, "ftplicense" integer, "name" character varying(255), "fullname" character varying(255), "dateofbirth" date, "team_id" integer, "country_iso" character varying(255), "place_id" integer, "email" character varying(255), "facebook" character varying(255), "twitter" character varying(255), "url" character varying(255), "racenumber" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607105417')
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-07 16:50:01 +0100
+Served asset /rails.png - 200 OK (6ms)
+
+
+Started GET "/athletes" for 127.0.0.1 at 2013-06-07 16:50:20 +0100
+Processing by AthletesController#index as HTML
+  [1m[36mAthlete Load (0.7ms)[0m  [1mSELECT "athletes".* FROM "athletes" [0m
+  Rendered athletes/index.html.erb within layouts/application (1.5ms)
+Compiled athletes.css  (3ms)  (pid 14136)
+Compiled scaffolds.css  (8ms)  (pid 14136)
+Compiled application.css  (20ms)  (pid 14136)
+Compiled jquery.js  (1ms)  (pid 14136)
+Compiled jquery_ujs.js  (0ms)  (pid 14136)
+Compiled athletes.js  (115ms)  (pid 14136)
+Compiled application.js  (154ms)  (pid 14136)
+Completed 200 OK in 245ms (Views: 228.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /application.css - 304 Not Modified (52ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /athletes.css - 200 OK (3ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /athletes.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 16:50:21 +0100
+Served asset /application.js - 200 OK (13ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAthletes (20130607105417)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.7ms)[0m  DROP TABLE "athletes"
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130607105417'[0m
+  [1m[35m (4.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (21.2ms)[0m  [1mCREATE TABLE "athletes" ("id" serial primary key, "ftp_license" integer, "name" character varying(255), "full_name" character varying(255), "birth_date" date, "team_id" integer, "country_iso" character varying(255), "place_id" integer, "email" character varying(255), "facebook" character varying(255), "twitter" character varying(255), "url" character varying(255), "ftp_number" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607160110')
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/athletes" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Processing by AthletesController#index as HTML
+  [1m[36mAthlete Load (0.6ms)[0m  [1mSELECT "athletes".* FROM "athletes" [0m
+  Rendered athletes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 56ms (Views: 18.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /athletes.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /athletes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 17:04:54 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/athletes/new" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Processing by AthletesController#new as HTML
+  Rendered athletes/_form.html.erb (37.7ms)
+  Rendered athletes/new.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 65ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /athletes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /athletes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 17:05:01 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171011)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (27.7ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city" character varying(255), "country" character varying(255), "web" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607171011')
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
