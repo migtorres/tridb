@@ -1,4 +1,7 @@
 Tridb::Application.routes.draw do
+  resources :triathlon_races
+
+
   resources :teams
 
 

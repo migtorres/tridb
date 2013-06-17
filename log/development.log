@@ -167,3 +167,383 @@ Connecting to database specified by database.yml
   [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::Error: ERROR:  relation "teams" already exists
+: CREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::Error: ERROR:  relation "teams" already exists
+: CREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (8.8ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::Error: ERROR:  relation "teams" already exists
+: CREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::Error: ERROR:  relation "teams" already exists
+: CREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::Error: ERROR:  relation "teams" already exists
+: CREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (11.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (20.0ms)[0m  [1mCREATE TABLE "athletes" ("id" serial primary key, "ftp_license" integer, "name" character varying(255), "full_name" character varying(255), "birth_date" date, "team_id" integer, "country_iso" character varying(255), "place_id" integer, "email" character varying(255), "facebook" character varying(255), "twitter" character varying(255), "url" character varying(255), "ftp_number" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607160110')
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTeams (20130607171423)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (13.4ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "city_id" integer, "country_iso" character varying(255), "site" character varying(255), "facebook" character varying(255), "location_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607171423')
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTipoProvas (20130607171501)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "tipo_provas" ("id" serial primary key, "tipo" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130607171501')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTriathlonRaces (20130614182351)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "triathlon_races" ("id" serial primary key, "date" date, "hour" time, "type" character varying(255), "swimming_distance" float, "cycling_distance" float, "running_distance" float, "location_id" integer, "competition_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130614182351')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCourses (20130614182934)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+Migrating to CreateTipoProvas (20130607171501)
+Migrating to CreateTriathlonRaces (20130614182351)
+Migrating to CreateCourses (20130614182934)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+Migrating to CreateTipoProvas (20130607171501)
+Migrating to CreateTriathlonRaces (20130614182351)
+Migrating to CreateCourses (20130614182934)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (12.9ms)[0m  [1mCREATE TABLE "courses" ("id" serial primary key, "the_geom" character varying(255), "sport_id" integer, "order" integer, "race_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130614182934')
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+Migrating to CreateTipoProvas (20130607171501)
+Migrating to CreateTriathlonRaces (20130614182351)
+Migrating to CreateCourses (20130614182934)
+Migrating to CreateTriathlonResults (20130614185912)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (15.1ms)[0m  [1mCREATE TABLE "triathlon_results" ("id" serial primary key, "place" integer, "ftp_number" integer, "ftp_license" integer, "swimming_place" integer, "swimming_time" time, "transition_one_place" integer, "transition_first_time" time, "cycling_place" integer, "cycling_time" time, "transition_two_place" integer, "transition_two_time" time, "running_place" integer, "running_time" time, "total_time" time, "difference" time, "triathlon_race_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130614185912')
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAthletes (20130607160110)
+Migrating to CreateTeams (20130607171423)
+Migrating to CreateTipoProvas (20130607171501)
+Migrating to CreateTriathlonRaces (20130614182351)
+Migrating to CreateCourses (20130614182934)
+Migrating to CreateTriathlonResults (20130614185912)
+Migrating to CreateLocations (20130614190708)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (21.1ms)[0m  [1mCREATE TABLE "locations" ("id" serial primary key, "lat" float, "lon" float, "parish" character varying(255), "municipality" character varying(255), "region1" character varying(255), "region2" character varying(255), "country" character varying(255), "continent" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130614190708')
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-14 20:12:19 +0100
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/athletes" for 127.0.0.1 at 2013-06-14 20:12:28 +0100
+Processing by AthletesController#index as HTML
+  [1m[36mAthlete Load (0.6ms)[0m  [1mSELECT "athletes".* FROM "athletes" [0m
+  Rendered athletes/index.html.erb within layouts/application (3.1ms)
+Compiled teams.css  (6ms)  (pid 6428)
+Compiled triathlon_races.css  (0ms)  (pid 6428)
+Compiled application.css  (17ms)  (pid 6428)
+Compiled teams.js  (118ms)  (pid 6428)
+Compiled triathlon_races.js  (103ms)  (pid 6428)
+Compiled application.js  (242ms)  (pid 6428)
+Completed 200 OK in 378ms (Views: 358.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /application.css - 200 OK (21ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /athletes.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /scaffolds.css - 200 OK (5ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /teams.css - 200 OK (2ms)
+
+
+Started GET "/assets/triathlon_races.css?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /triathlon_races.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /jquery.js - 200 OK (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /athletes.js - 200 OK (1ms)
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /teams.js - 200 OK (1ms)
+
+
+Started GET "/assets/triathlon_races.js?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /triathlon_races.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 20:12:29 +0100
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/races" for 127.0.0.1 at 2013-06-14 20:12:45 +0100
+
+ActionController::RoutingError (No route matches [GET] "/races"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/triathlon_races" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Processing by TriathlonRacesController#index as HTML
+  [1m[35mTriathlonRace Load (0.6ms)[0m  SELECT "triathlon_races".* FROM "triathlon_races" 
+  Rendered triathlon_races/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 20.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /athletes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /teams.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/triathlon_races.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /triathlon_races.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /athletes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /teams.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/triathlon_races.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /triathlon_races.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:00 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/triathlon_races/new" for 127.0.0.1 at 2013-06-14 20:13:04 +0100
+Processing by TriathlonRacesController#new as HTML
+  Rendered triathlon_races/_form.html.erb (36.4ms)
+  Rendered triathlon_races/new.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 69ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /athletes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /teams.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/triathlon_races.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /triathlon_races.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /athletes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /teams.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/triathlon_races.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /triathlon_races.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:05 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/triathlon_races" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Processing by TriathlonRacesController#index as HTML
+  [1m[36mTriathlonRace Load (0.2ms)[0m  [1mSELECT "triathlon_races".* FROM "triathlon_races" [0m
+  Rendered triathlon_races/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/athletes.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /athletes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /teams.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/triathlon_races.css?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /triathlon_races.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/athletes.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /athletes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /teams.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/triathlon_races.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /triathlon_races.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 20:13:22 +0100
+Served asset /application.js - 304 Not Modified (1ms)
