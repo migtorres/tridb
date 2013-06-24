@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @triathlon_race.date %>
+</p>
+
+<p>
+  <b>Hour:</b>
+  <%= @triathlon_race.hour %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @triathlon_race.type %>
+</p>
+
+<p>
+  <b>Swimming distance:</b>
+  <%= @triathlon_race.swimming_distance %>
+</p>
+
+<p>
+  <b>Cycling distance:</b>
+  <%= @triathlon_race.cycling_distance %>
+</p>
+
+<p>
+  <b>Running distance:</b>
+  <%= @triathlon_race.running_distance %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @triathlon_race.location_id %>
+</p>
+
+<p>
+  <b>Competition:</b>
+  <%= @triathlon_race.competition_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_triathlon_race_path(@triathlon_race) %> |
+<%= link_to 'Back', triathlon_races_path %>
