@@ -1,69 +1,51 @@
 class AthletesController < ApplicationController
+  before_action :set_athlete, only: [:show, :edit, :update, :destroy]
+
   # GET /athletes
   # GET /athletes.json
   def index
     @athletes = Athlete.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @athletes }
-    end
   end
 
   # GET /athletes/1
   # GET /athletes/1.json
   def show
-    @athlete = Athlete.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @athlete }
-    end
   end
 
   # GET /athletes/new
-  # GET /athletes/new.json
   def new
     @athlete = Athlete.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @athlete }
-    end
   end
 
   # GET /athletes/1/edit
   def edit
-    @athlete = Athlete.find(params[:id])
   end
 
   # POST /athletes
   # POST /athletes.json
   def create
-    @athlete = Athlete.new(params[:athlete])
+    @athlete = Athlete.new(athlete_params)
 
     respond_to do |format|
       if @athlete.save
         format.html { redirect_to @athlete, notice: 'Athlete was successfully created.' }
-        format.json { render json: @athlete, status: :created, location: @athlete }
+        format.json { render action: 'show', status: :created, location: @athlete }
       else
-        format.html { render action: "new" }
+        format.html { render action: 'new' }
         format.json { render json: @athlete.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PUT /athletes/1
-  # PUT /athletes/1.json
+  # PATCH/PUT /athletes/1
+  # PATCH/PUT /athletes/1.json
   def update
-    @athlete = Athlete.find(params[:id])
-
     respond_to do |format|
-      if @athlete.update_attributes(params[:athlete])
+      if @athlete.update(athlete_params)
         format.html { redirect_to @athlete, notice: 'Athlete was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render action: 'edit' }
         format.json { render json: @athlete.errors, status: :unprocessable_entity }
       end
     end
@@ -72,12 +54,21 @@ class AthletesController < ApplicationController
   # DELETE /athletes/1
   # DELETE /athletes/1.json
   def destroy
-    @athlete = Athlete.find(params[:id])
     @athlete.destroy
-
     respond_to do |format|
       format.html { redirect_to athletes_url }
       format.json { head :no_content }
     end
   end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_athlete
+      @athlete = Athlete.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def athlete_params
+      params.require(:athlete).permit(:ftp_number, :ftp_license, :name, :full_name, :birth_date, :team_id, :location_id, :email, :facebook, :twitter, :url, :gender, :nationality)
+    end
 end

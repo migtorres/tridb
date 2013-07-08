@@ -1,65 +1,69 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Ftp license:</b>
+  <strong>Ftp number:</strong>
+  <%= @athlete.ftp_number %>
+</p>
+
+<p>
+  <strong>Ftp license:</strong>
   <%= @athlete.ftp_license %>
 </p>
 
 <p>
-  <b>Name:</b>
+  <strong>Name:</strong>
   <%= @athlete.name %>
 </p>
 
 <p>
-  <b>Full name:</b>
+  <strong>Full name:</strong>
   <%= @athlete.full_name %>
 </p>
 
 <p>
-  <b>Birth date:</b>
+  <strong>Birth date:</strong>
   <%= @athlete.birth_date %>
 </p>
 
 <p>
-  <b>Team:</b>
+  <strong>Team:</strong>
   <%= @athlete.team_id %>
 </p>
 
 <p>
-  <b>Country iso:</b>
-  <%= @athlete.country_iso %>
+  <strong>Location:</strong>
+  <%= @athlete.location_id %>
 </p>
 
 <p>
-  <b>Place:</b>
-  <%= @athlete.place_id %>
-</p>
-
-<p>
-  <b>Email:</b>
+  <strong>Email:</strong>
   <%= @athlete.email %>
 </p>
 
 <p>
-  <b>Facebook:</b>
+  <strong>Facebook:</strong>
   <%= @athlete.facebook %>
 </p>
 
 <p>
-  <b>Twitter:</b>
+  <strong>Twitter:</strong>
   <%= @athlete.twitter %>
 </p>
 
 <p>
-  <b>Url:</b>
+  <strong>Url:</strong>
   <%= @athlete.url %>
 </p>
 
 <p>
-  <b>Ftp number:</b>
-  <%= @athlete.ftp_number %>
+  <strong>Gender:</strong>
+  <%= @athlete.gender %>
 </p>
 
+<p>
+  <strong>Nationality:</strong>
+  <%= @athlete.nationality %>
+</p>
 
 <%= link_to 'Edit', edit_athlete_path(@athlete) %> |
 <%= link_to 'Back', athletes_path %>

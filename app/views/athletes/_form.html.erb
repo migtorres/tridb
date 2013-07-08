@@ -12,52 +12,56 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :ftp_license %><br />
+    <%= f.label :ftp_number %><br>
+    <%= f.number_field :ftp_number %>
+  </div>
+  <div class="field">
+    <%= f.label :ftp_license %><br>
     <%= f.number_field :ftp_license %>
   </div>
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :full_name %><br />
+    <%= f.label :full_name %><br>
     <%= f.text_field :full_name %>
   </div>
   <div class="field">
-    <%= f.label :birth_date %><br />
+    <%= f.label :birth_date %><br>
     <%= f.date_select :birth_date %>
   </div>
   <div class="field">
-    <%= f.label :team_id %><br />
+    <%= f.label :team_id %><br>
     <%= f.number_field :team_id %>
   </div>
   <div class="field">
-    <%= f.label :country_iso %><br />
-    <%= f.text_field :country_iso %>
+    <%= f.label :location_id %><br>
+    <%= f.number_field :location_id %>
   </div>
   <div class="field">
-    <%= f.label :place_id %><br />
-    <%= f.number_field :place_id %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :facebook %><br />
+    <%= f.label :facebook %><br>
     <%= f.text_field :facebook %>
   </div>
   <div class="field">
-    <%= f.label :twitter %><br />
+    <%= f.label :twitter %><br>
     <%= f.text_field :twitter %>
   </div>
   <div class="field">
-    <%= f.label :url %><br />
+    <%= f.label :url %><br>
     <%= f.text_field :url %>
   </div>
   <div class="field">
-    <%= f.label :ftp_number %><br />
-    <%= f.number_field :ftp_number %>
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :nationality %><br>
+    <%= f.text_field :nationality %>
   </div>
   <div class="actions">
     <%= f.submit %>

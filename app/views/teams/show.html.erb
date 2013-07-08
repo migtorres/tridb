@@ -1,40 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <strong>Name:</strong>
   <%= @team.name %>
 </p>
 
 <p>
-  <b>Address:</b>
-  <%= @team.address %>
+  <strong>Location:</strong>
+  <%= @team.location_id %>
 </p>
 
 <p>
-  <b>City:</b>
-  <%= @team.city_id %>
-</p>
-
-<p>
-  <b>Country iso:</b>
-  <%= @team.country_iso %>
-</p>
-
-<p>
-  <b>Site:</b>
+  <strong>Site:</strong>
   <%= @team.site %>
 </p>
 
 <p>
-  <b>Facebook:</b>
+  <strong>Facebook:</strong>
   <%= @team.facebook %>
 </p>
 
 <p>
-  <b>Location:</b>
-  <%= @team.location_id %>
+  <strong>Twitter:</strong>
+  <%= @team.twitter %>
 </p>
-
 
 <%= link_to 'Edit', edit_team_path(@team) %> |
 <%= link_to 'Back', teams_path %>

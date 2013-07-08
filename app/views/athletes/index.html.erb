@@ -1,45 +1,51 @@
 <h1>Listing athletes</h1>
 
 <table>
-  <tr>
-    <th>Ftp license</th>
-    <th>Name</th>
-    <th>Full name</th>
-    <th>Birth date</th>
-    <th>Team</th>
-    <th>Country iso</th>
-    <th>Place</th>
-    <th>Email</th>
-    <th>Facebook</th>
-    <th>Twitter</th>
-    <th>Url</th>
-    <th>Ftp number</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <thead>
+    <tr>
+      <th>Ftp number</th>
+      <th>Ftp license</th>
+      <th>Name</th>
+      <th>Full name</th>
+      <th>Birth date</th>
+      <th>Team</th>
+      <th>Location</th>
+      <th>Email</th>
+      <th>Facebook</th>
+      <th>Twitter</th>
+      <th>Url</th>
+      <th>Gender</th>
+      <th>Nationality</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
 
-<% @athletes.each do |athlete| %>
-  <tr>
-    <td><%= athlete.ftp_license %></td>
-    <td><%= athlete.name %></td>
-    <td><%= athlete.full_name %></td>
-    <td><%= athlete.birth_date %></td>
-    <td><%= athlete.team_id %></td>
-    <td><%= athlete.country_iso %></td>
-    <td><%= athlete.place_id %></td>
-    <td><%= athlete.email %></td>
-    <td><%= athlete.facebook %></td>
-    <td><%= athlete.twitter %></td>
-    <td><%= athlete.url %></td>
-    <td><%= athlete.ftp_number %></td>
-    <td><%= link_to 'Show', athlete %></td>
-    <td><%= link_to 'Edit', edit_athlete_path(athlete) %></td>
-    <td><%= link_to 'Destroy', athlete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <tbody>
+    <% @athletes.each do |athlete| %>
+      <tr>
+        <td><%= athlete.ftp_number %></td>
+        <td><%= athlete.ftp_license %></td>
+        <td><%= athlete.name %></td>
+        <td><%= athlete.full_name %></td>
+        <td><%= athlete.birth_date %></td>
+        <td><%= athlete.team_id %></td>
+        <td><%= athlete.location_id %></td>
+        <td><%= athlete.email %></td>
+        <td><%= athlete.facebook %></td>
+        <td><%= athlete.twitter %></td>
+        <td><%= athlete.url %></td>
+        <td><%= athlete.gender %></td>
+        <td><%= athlete.nationality %></td>
+        <td><%= link_to 'Show', athlete %></td>
+        <td><%= link_to 'Edit', edit_athlete_path(athlete) %></td>
+        <td><%= link_to 'Destroy', athlete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
+<br>
 
 <%= link_to 'New Athlete', new_athlete_path %>

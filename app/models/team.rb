@@ -1,3 +1,4 @@
 class Team < ActiveRecord::Base
-  attr_accessible :address, :city_id, :country_iso, :facebook, :location_id, :name, :site
+  has_many :athletes
+  has_many :team_years
 end

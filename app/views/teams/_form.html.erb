@@ -12,32 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :address %><br />
-    <%= f.text_field :address %>
+    <%= f.label :location_id %><br>
+    <%= f.number_field :location_id %>
   </div>
   <div class="field">
-    <%= f.label :city_id %><br />
-    <%= f.number_field :city_id %>
-  </div>
-  <div class="field">
-    <%= f.label :country_iso %><br />
-    <%= f.text_field :country_iso %>
-  </div>
-  <div class="field">
-    <%= f.label :site %><br />
+    <%= f.label :site %><br>
     <%= f.text_field :site %>
   </div>
   <div class="field">
-    <%= f.label :facebook %><br />
+    <%= f.label :facebook %><br>
     <%= f.text_field :facebook %>
   </div>
   <div class="field">
-    <%= f.label :location_id %><br />
-    <%= f.number_field :location_id %>
+    <%= f.label :twitter %><br>
+    <%= f.text_field :twitter %>
   </div>
   <div class="actions">
     <%= f.submit %>

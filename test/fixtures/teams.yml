@@ -2,18 +2,14 @@
 
 one:
   name: MyString
-  address: MyString
-  city_id: 1
-  country_iso: MyString
+  location_id: 1
   site: MyString
   facebook: MyString
-  location_id: 1
+  twitter: MyString
 
 two:
   name: MyString
-  address: MyString
-  city_id: 1
-  country_iso: MyString
+  location_id: 1
   site: MyString
   facebook: MyString
-  location_id: 1
+  twitter: MyString
