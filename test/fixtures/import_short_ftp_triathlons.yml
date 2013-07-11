@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place: 1
+  ftp_number: 1
+  ftp_license: 1
+  athlete_name: MyText
+  pen: MyText
+  age_group_name: MyText
+  team: MyString
+  swimming_position: 1
+  swimming_time: 2013-07-08 21:56:39
+  cycling_position: 1
+  cycling_time: 2013-07-08 21:56:39
+  running_position: 1
+  running_time: 2013-07-08 21:56:39
+  race_time: 2013-07-08 21:56:39
+
+two:
+  place: 1
+  ftp_number: 1
+  ftp_license: 1
+  athlete_name: MyText
+  pen: MyText
+  age_group_name: MyText
+  team: MyString
+  swimming_position: 1
+  swimming_time: 2013-07-08 21:56:39
+  cycling_position: 1
+  cycling_time: 2013-07-08 21:56:39
+  running_position: 1
+  running_time: 2013-07-08 21:56:39
+  race_time: 2013-07-08 21:56:39

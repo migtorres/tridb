@@ -1,0 +1,31 @@
+<h1>Listing team_years</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Athlete</th>
+      <th>Team</th>
+      <th>Year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @team_years.each do |team_year| %>
+      <tr>
+        <td><%= team_year.athlete_id %></td>
+        <td><%= team_year.team_id %></td>
+        <td><%= team_year.year %></td>
+        <td><%= link_to 'Show', team_year %></td>
+        <td><%= link_to 'Edit', edit_team_year_path(team_year) %></td>
+        <td><%= link_to 'Destroy', team_year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Team year', new_team_year_path %>

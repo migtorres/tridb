@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  athlete_id: 1
+  segment_id: 1
+  place: 1
+  time: 2013-07-08 16:10:42
+  age_group_id: 1
+  class_id: 1
+
+two:
+  athlete_id: 1
+  segment_id: 1
+  place: 1
+  time: 2013-07-08 16:10:42
+  age_group_id: 1
+  class_id: 1

@@ -1,4 +1,6 @@
 Tridb::Application.routes.draw do
+  resources :import_short_ftp_triathlons
+
   resources :competitions
 
   resources :team_years

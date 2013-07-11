@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  race_id: 1
+  athlete_id: 1
+  classification_id: 1
+  place: 1
+  time: 2013-07-02 00:29:04
+  age_group_id: 1
+  class_id: 1
+
+two:
+  race_id: 1
+  athlete_id: 1
+  classification_id: 1
+  place: 1
+  time: 2013-07-02 00:29:04
+  age_group_id: 1
+  class_id: 1

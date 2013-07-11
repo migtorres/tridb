@@ -1,0 +1,53 @@
+<h1>Listing import_short_ftp_triathlons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Place</th>
+      <th>Ftp number</th>
+      <th>Ftp license</th>
+      <th>Athlete name</th>
+      <th>Pen</th>
+      <th>Age group name</th>
+      <th>Team</th>
+      <th>Swimming position</th>
+      <th>Swimming time</th>
+      <th>Cycling position</th>
+      <th>Cycling time</th>
+      <th>Running position</th>
+      <th>Running time</th>
+      <th>Race time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @import_short_ftp_triathlons.each do |import_short_ftp_triathlon| %>
+      <tr>
+        <td><%= import_short_ftp_triathlon.place %></td>
+        <td><%= import_short_ftp_triathlon.ftp_number %></td>
+        <td><%= import_short_ftp_triathlon.ftp_license %></td>
+        <td><%= import_short_ftp_triathlon.athlete_name %></td>
+        <td><%= import_short_ftp_triathlon.pen %></td>
+        <td><%= import_short_ftp_triathlon.age_group_name %></td>
+        <td><%= import_short_ftp_triathlon.team %></td>
+        <td><%= import_short_ftp_triathlon.swimming_position %></td>
+        <td><%= import_short_ftp_triathlon.swimming_time %></td>
+        <td><%= import_short_ftp_triathlon.cycling_position %></td>
+        <td><%= import_short_ftp_triathlon.cycling_time %></td>
+        <td><%= import_short_ftp_triathlon.running_position %></td>
+        <td><%= import_short_ftp_triathlon.running_time %></td>
+        <td><%= import_short_ftp_triathlon.race_time %></td>
+        <td><%= link_to 'Show', import_short_ftp_triathlon %></td>
+        <td><%= link_to 'Edit', edit_import_short_ftp_triathlon_path(import_short_ftp_triathlon) %></td>
+        <td><%= link_to 'Destroy', import_short_ftp_triathlon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Import short ftp triathlon', new_import_short_ftp_triathlon_path %>

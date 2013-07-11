@@ -1,0 +1,29 @@
+<%= form_for(@team_year) do |f| %>
+  <% if @team_year.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team_year.errors.count, "error") %> prohibited this team_year from being saved:</h2>
+
+      <ul>
+      <% @team_year.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :athlete_id %><br>
+    <%= f.number_field :athlete_id %>
+  </div>
+  <div class="field">
+    <%= f.label :team_id %><br>
+    <%= f.number_field :team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

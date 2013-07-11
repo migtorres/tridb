@@ -1,0 +1,35 @@
+<h1>Listing segments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Race</th>
+      <th>Sport</th>
+      <th>Order</th>
+      <th>The geom</th>
+      <th>Distance</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @segments.each do |segment| %>
+      <tr>
+        <td><%= segment.race_id %></td>
+        <td><%= segment.sport_id %></td>
+        <td><%= segment.order %></td>
+        <td><%= segment.the_geom %></td>
+        <td><%= segment.distance %></td>
+        <td><%= link_to 'Show', segment %></td>
+        <td><%= link_to 'Edit', edit_segment_path(segment) %></td>
+        <td><%= link_to 'Destroy', segment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Segment', new_segment_path %>

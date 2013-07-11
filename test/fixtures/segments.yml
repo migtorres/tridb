@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  race_id: 1
+  sport_id: 1
+  order: 1
+  the_geom: 
+  distance: 1.5
+
+two:
+  race_id: 1
+  sport_id: 1
+  order: 1
+  the_geom: 
+  distance: 1.5

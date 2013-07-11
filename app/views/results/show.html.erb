@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @result.race_id %>
+</p>
+
+<p>
+  <strong>Athlete:</strong>
+  <%= @result.athlete_id %>
+</p>
+
+<p>
+  <strong>Classification:</strong>
+  <%= @result.classification_id %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @result.place %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @result.time %>
+</p>
+
+<p>
+  <strong>Age group:</strong>
+  <%= @result.age_group_id %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @result.class_id %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

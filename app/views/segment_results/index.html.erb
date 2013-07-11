@@ -1,0 +1,37 @@
+<h1>Listing segment_results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Athlete</th>
+      <th>Segment</th>
+      <th>Place</th>
+      <th>Time</th>
+      <th>Age group</th>
+      <th>Class</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @segment_results.each do |segment_result| %>
+      <tr>
+        <td><%= segment_result.athlete_id %></td>
+        <td><%= segment_result.segment_id %></td>
+        <td><%= segment_result.place %></td>
+        <td><%= segment_result.time %></td>
+        <td><%= segment_result.age_group_id %></td>
+        <td><%= segment_result.class_id %></td>
+        <td><%= link_to 'Show', segment_result %></td>
+        <td><%= link_to 'Edit', edit_segment_result_path(segment_result) %></td>
+        <td><%= link_to 'Destroy', segment_result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Segment result', new_segment_result_path %>

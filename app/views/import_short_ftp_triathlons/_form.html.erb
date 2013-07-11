@@ -1,0 +1,73 @@
+<%= form_for(@import_short_ftp_triathlon) do |f| %>
+  <% if @import_short_ftp_triathlon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@import_short_ftp_triathlon.errors.count, "error") %> prohibited this import_short_ftp_triathlon from being saved:</h2>
+
+      <ul>
+      <% @import_short_ftp_triathlon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :place %><br>
+    <%= f.number_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :ftp_number %><br>
+    <%= f.number_field :ftp_number %>
+  </div>
+  <div class="field">
+    <%= f.label :ftp_license %><br>
+    <%= f.number_field :ftp_license %>
+  </div>
+  <div class="field">
+    <%= f.label :athlete_name %><br>
+    <%= f.text_area :athlete_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pen %><br>
+    <%= f.text_area :pen %>
+  </div>
+  <div class="field">
+    <%= f.label :age_group_name %><br>
+    <%= f.text_area :age_group_name %>
+  </div>
+  <div class="field">
+    <%= f.label :team %><br>
+    <%= f.text_field :team %>
+  </div>
+  <div class="field">
+    <%= f.label :swimming_position %><br>
+    <%= f.number_field :swimming_position %>
+  </div>
+  <div class="field">
+    <%= f.label :swimming_time %><br>
+    <%= f.time_select :swimming_time %>
+  </div>
+  <div class="field">
+    <%= f.label :cycling_position %><br>
+    <%= f.number_field :cycling_position %>
+  </div>
+  <div class="field">
+    <%= f.label :cycling_time %><br>
+    <%= f.time_select :cycling_time %>
+  </div>
+  <div class="field">
+    <%= f.label :running_position %><br>
+    <%= f.number_field :running_position %>
+  </div>
+  <div class="field">
+    <%= f.label :running_time %><br>
+    <%= f.time_select :running_time %>
+  </div>
+  <div class="field">
+    <%= f.label :race_time %><br>
+    <%= f.time_select :race_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

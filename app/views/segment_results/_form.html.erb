@@ -1,0 +1,41 @@
+<%= form_for(@segment_result) do |f| %>
+  <% if @segment_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@segment_result.errors.count, "error") %> prohibited this segment_result from being saved:</h2>
+
+      <ul>
+      <% @segment_result.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :athlete_id %><br>
+    <%= f.number_field :athlete_id %>
+  </div>
+  <div class="field">
+    <%= f.label :segment_id %><br>
+    <%= f.number_field :segment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :place %><br>
+    <%= f.number_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.time_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :age_group_id %><br>
+    <%= f.number_field :age_group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :class_id %><br>
+    <%= f.number_field :class_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

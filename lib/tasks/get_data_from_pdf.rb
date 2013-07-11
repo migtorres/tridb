@@ -56,4 +56,23 @@ class Import
       
    end
 
+results_all_array.each do |x|
+ if x[0] != 0
+   ImportShortFtpTriathlon.create({:place => x[0],
+  :ftp_number => x[1],
+  :ftp_license => x[2],
+  :athlete_name => x[3].strip,
+  :pen => x[4].strip,
+  :age_group_name => x[5].strip,
+  :team => x[6].strip ,
+  :swimming_position => x[7],
+  :swimming_time => x[8],
+  :cycling_position => x[9],
+  :cycling_time => x[10],
+  :running_position => x[11],
+  :running_time => x[12],
+  :race_time => x[13]})
+ else
  end
+end
+

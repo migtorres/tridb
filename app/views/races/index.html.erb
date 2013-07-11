@@ -1,0 +1,39 @@
+<h1>Listing races</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Competition</th>
+      <th>Sport</th>
+      <th>Global race</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @races.each do |race| %>
+      <tr>
+        <td><%= race.location_id %></td>
+        <td><%= race.type_id %></td>
+        <td><%= race.name %></td>
+        <td><%= race.date %></td>
+        <td><%= race.competition_id %></td>
+        <td><%= race.sport_id %></td>
+        <td><%= race.global_race_id %></td>
+        <td><%= link_to 'Show', race %></td>
+        <td><%= link_to 'Edit', edit_race_path(race) %></td>
+        <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Race', new_race_path %>

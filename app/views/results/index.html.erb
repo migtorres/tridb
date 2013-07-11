@@ -1,0 +1,39 @@
+<h1>Listing results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Race</th>
+      <th>Athlete</th>
+      <th>Classification</th>
+      <th>Place</th>
+      <th>Time</th>
+      <th>Age group</th>
+      <th>Class</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @results.each do |result| %>
+      <tr>
+        <td><%= result.race_id %></td>
+        <td><%= result.athlete_id %></td>
+        <td><%= result.classification_id %></td>
+        <td><%= result.place %></td>
+        <td><%= result.time %></td>
+        <td><%= result.age_group_id %></td>
+        <td><%= result.class_id %></td>
+        <td><%= link_to 'Show', result %></td>
+        <td><%= link_to 'Edit', edit_result_path(result) %></td>
+        <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Result', new_result_path %>

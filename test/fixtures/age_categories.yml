@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  minimum_age: 1
+  maximum_age: 1
+  name: 1
+
+two:
+  minimum_age: 1
+  maximum_age: 1
+  name: 1

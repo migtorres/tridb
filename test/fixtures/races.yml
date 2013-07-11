@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  location_id: 1
+  type_id: 1
+  name: MyString
+  date: 2013-07-02
+  competition_id: 1
+  sport_id: 1
+  global_race_id: 1
+
+two:
+  location_id: 1
+  type_id: 1
+  name: MyString
+  date: 2013-07-02
+  competition_id: 1
+  sport_id: 1
+  global_race_id: 1

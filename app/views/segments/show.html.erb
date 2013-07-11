@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @segment.race_id %>
+</p>
+
+<p>
+  <strong>Sport:</strong>
+  <%= @segment.sport_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @segment.order %>
+</p>
+
+<p>
+  <strong>The geom:</strong>
+  <%= @segment.the_geom %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @segment.distance %>
+</p>
+
+<%= link_to 'Edit', edit_segment_path(@segment) %> |
+<%= link_to 'Back', segments_path %>

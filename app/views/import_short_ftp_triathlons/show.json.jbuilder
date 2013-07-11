@@ -1,0 +1,1 @@
+json.extract! @import_short_ftp_triathlon, :place, :ftp_number, :ftp_license, :athlete_name, :pen, :age_group_name, :team, :swimming_position, :swimming_time, :cycling_position, :cycling_time, :running_position, :running_time, :race_time, :created_at, :updated_at
