@@ -1,69 +1,45 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Athlete -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Ftp number:</strong>
-  <%= @athlete.ftp_number %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:ftp_number) %>:</strong></dt>
+  <dd><%= @athlete.ftp_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:ftp_license) %>:</strong></dt>
+  <dd><%= @athlete.ftp_license %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @athlete.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:full_name) %>:</strong></dt>
+  <dd><%= @athlete.full_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:birth_date) %>:</strong></dt>
+  <dd><%= @athlete.birth_date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:team_id) %>:</strong></dt>
+  <dd><%= @athlete.team_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:location_id) %>:</strong></dt>
+  <dd><%= @athlete.location_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @athlete.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:facebook) %>:</strong></dt>
+  <dd><%= @athlete.facebook %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:twitter) %>:</strong></dt>
+  <dd><%= @athlete.twitter %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:url) %>:</strong></dt>
+  <dd><%= @athlete.url %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:gender) %>:</strong></dt>
+  <dd><%= @athlete.gender %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:nationality) %>:</strong></dt>
+  <dd><%= @athlete.nationality %></dd>
+</dl>
 
-<p>
-  <strong>Ftp license:</strong>
-  <%= @athlete.ftp_license %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @athlete.name %>
-</p>
-
-<p>
-  <strong>Full name:</strong>
-  <%= @athlete.full_name %>
-</p>
-
-<p>
-  <strong>Birth date:</strong>
-  <%= @athlete.birth_date %>
-</p>
-
-<p>
-  <strong>Team:</strong>
-  <%= @athlete.team_id %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @athlete.location_id %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @athlete.email %>
-</p>
-
-<p>
-  <strong>Facebook:</strong>
-  <%= @athlete.facebook %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @athlete.twitter %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @athlete.url %>
-</p>
-
-<p>
-  <strong>Gender:</strong>
-  <%= @athlete.gender %>
-</p>
-
-<p>
-  <strong>Nationality:</strong>
-  <%= @athlete.nationality %>
-</p>
-
-<%= link_to 'Edit', edit_athlete_path(@athlete) %> |
-<%= link_to 'Back', athletes_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              athletes_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_athlete_path(@athlete), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              athlete_path(@athlete),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

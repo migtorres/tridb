@@ -4,6 +4,8 @@ class ImportShortFtpTriathlonsController < ApplicationController
   # GET /import_short_ftp_triathlons
   # GET /import_short_ftp_triathlons.json
   def index
+    @message = "This is the place to import triathlon pages!"
+
     @import_short_ftp_triathlons = ImportShortFtpTriathlon.all
   end
 
