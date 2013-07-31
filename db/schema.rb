@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130716231214) do
+ActiveRecord::Schema.define(version: 20130730100645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,12 +69,19 @@ ActiveRecord::Schema.define(version: 20130716231214) do
     t.datetime "updated_at"
   end
 
-  create_table "import_results_from_urls", force: true do |t|
-    t.text     "url"
-    t.text     "type"
-    t.string   "quantity"
+  create_table "import_long_ftp_triathlons", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "import_results_from_urls", force: true do |t|
+    t.text     "url"
+    t.text     "import_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "race_type_id"
+    t.integer  "competition_id"
+    t.integer  "global_race_id"
   end
 
   create_table "import_short_ftp_triathlons", force: true do |t|
@@ -96,6 +103,11 @@ ActiveRecord::Schema.define(version: 20130716231214) do
     t.datetime "updated_at"
   end
 
+  create_table "import_zero_ftp_triathlons", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "locations", force: true do |t|
     t.float    "lat"
     t.float    "lon"
@@ -110,6 +122,7 @@ ActiveRecord::Schema.define(version: 20130716231214) do
   end
 
   create_table "race_types", force: true do |t|
+    t.integer  "sport_id"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -121,7 +134,6 @@ ActiveRecord::Schema.define(version: 20130716231214) do
     t.string   "name"
     t.date     "date"
     t.integer  "competition_id"
-    t.integer  "sport_id"
     t.integer  "global_race_id"
     t.datetime "created_at"
     t.datetime "updated_at"

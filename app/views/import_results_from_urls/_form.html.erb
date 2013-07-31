@@ -1,26 +1,35 @@
 <%= form_for @import_results_from_url, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :url, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :url, :class => 'text_field' %>
-    </div>
+  <%= f.label :url, :class => 'control-label' %>
+  <div class="controls">
+    <%= f.text_field :url, :class => 'text_field' %>
   </div>
-  <div class="control-group">
-    <%= f.label :type, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :type, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :quantity, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :quantity, :class => 'text_field' %>
-    </div>
-  </div>
+</div>
+<div class="control-group">
+  <% import_types = {'Triatlo FTP Sem Transições' => 'short_ftp_triathlon', 'Triatlo FTP com Transições' => 'long_ftp_triathlon', 'Triatlo FTP sem sectores' => 'zero_ftp_triathlon'} %>
+  <%= f.label :import_type, :class => 'control-label' %>
+  <%= f.select :import_type, [['Triatlo FTP Sem Transições' , 'short_ftp_triathlon'], ['Triatlo FTP Com Transições' , 'long_ftp_triathlon'], [ 'Triatlo FTP Sem sectores', 'zero_ftp_triathlon']] %>
+</div>
 
-  <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                import_results_from_urls_path, :class => 'btn' %>
-  </div>
+<div class="control-group">
+    <%= f.label :race_type_id, :class => 'control-label' %>
+  <%= f.collection_select(:race_type_id, RaceType.all, :id, :name) %>
+</div>
+
+<div class="control-group">
+    <%= f.label :global_race_id, :class => 'control-label' %>
+  <%= f.collection_select(:global_race_id, GlobalRace.all, :id, :name) %>
+</div>
+
+<div class="control-group">
+  <%= f.label :competition_id, :class => 'control-label' %>
+  <%= f.collection_select(:competition_id, Competition.all, :id, :name) %>
+</div>
+
+
+<div class="form-actions">
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+    import_results_from_urls_path, :class => 'btn' %>
+</div>
 <% end %>

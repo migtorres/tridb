@@ -1,6 +1,10 @@
 class ImportResultsFromUrlsController < ApplicationController
   before_action :set_import_results_from_url, only: [:show, :edit, :update, :destroy]
 
+  def startup_params
+    params.require(startup).permit(:race_type_id)
+  end
+
   # GET /import_results_from_urls
   # GET /import_results_from_urls.json
   def index
@@ -15,6 +19,7 @@ class ImportResultsFromUrlsController < ApplicationController
   # GET /import_results_from_urls/new
   def new
     @import_results_from_url = ImportResultsFromUrl.new
+    @race_types = RaceType.all
   end
 
   # GET /import_results_from_urls/1/edit
@@ -69,6 +74,6 @@ class ImportResultsFromUrlsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def import_results_from_url_params
-      params.require(:import_results_from_url).permit(:url, :type, :quantity)
+      params.require(:import_results_from_url).permit(:url, :import_type, :race_type_id, :competition_id, :global_race_id)
     end
 end
