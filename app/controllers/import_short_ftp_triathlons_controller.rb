@@ -71,6 +71,6 @@ class ImportShortFtpTriathlonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def import_short_ftp_triathlon_params
-      params.require(:import_short_ftp_triathlon).permit(:place, :ftp_number, :ftp_license, :athlete_name, :pen, :age_group_name, :team, :swimming_position, :swimming_time, :cycling_position, :cycling_time, :running_position, :running_time, :race_time)
+      params.require(:import_short_ftp_triathlon).permit(:place, :ftp_number, :ftp_license, :athlete_name, :pen, :age_group_name, :team, :swimming_position, :swimming_time, :cycling_position, :cycling_time, :running_position, :running_time, :race_time, :import_results_from_url_id)
     end
 end

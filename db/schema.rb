@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130730100645) do
+ActiveRecord::Schema.define(version: 20130802190711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(version: 20130730100645) do
     t.time     "race_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "import_results_from_url_id"
   end
 
   create_table "import_zero_ftp_triathlons", force: true do |t|

@@ -74,6 +74,6 @@ class ImportResultsFromUrlsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def import_results_from_url_params
-      params.require(:import_results_from_url).permit(:url, :import_type, :race_type_id, :competition_id, :global_race_id)
+      params.require(:import_results_from_url).permit(:url, :import_type, :race_type_id, :competition_id, :global_race_id, :id)
     end
 end
