@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130802190711) do
+ActiveRecord::Schema.define(version: 20130816131441) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,6 +72,25 @@ ActiveRecord::Schema.define(version: 20130802190711) do
   create_table "import_long_ftp_triathlons", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "place"
+    t.integer  "ftp_number"
+    t.integer  "ftp_license"
+    t.text     "athlete_name"
+    t.string   "pen"
+    t.string   "age_group_name"
+    t.string   "team"
+    t.integer  "swimming_position"
+    t.time     "swimming_time"
+    t.integer  "transition_one_position"
+    t.time     "transition_one_time"
+    t.integer  "cycling_position"
+    t.time     "cycling_time"
+    t.integer  "transition_two_position"
+    t.time     "transition_two_time"
+    t.integer  "ruuning_position"
+    t.time     "running_time"
+    t.time     "race_time"
+    t.integer  "import_results_from_url_id"
   end
 
   create_table "import_results_from_urls", force: true do |t|
@@ -107,6 +126,15 @@ ActiveRecord::Schema.define(version: 20130802190711) do
   create_table "import_zero_ftp_triathlons", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "place"
+    t.integer  "ftp_number"
+    t.integer  "ftp_license"
+    t.text     "athlete_name"
+    t.string   "pen"
+    t.string   "age_group_name"
+    t.string   "team"
+    t.time     "race_time"
+    t.integer  "import_results_from_url_id"
   end
 
   create_table "locations", force: true do |t|

@@ -17,9 +17,9 @@ class ImportResultsFromUrl < ActiveRecord::Base
     if @import_type == 'short_ftp_triathlon'
       ImportShortFtpTriathlon.import_from_url(@url,@id)
     elsif @import_type == 'long_ftp_triathlon'
-      ImportLongFtpTriathlon.import_from_url(@url)
+      ImportLongFtpTriathlon.import_from_url(@url,@id)
     else
-      #ImportZeroFtpTriathlon.import_from_url(@url)
+      ImportZeroFtpTriathlon.import_from_url(@url, @id)
     end
   end
   private
